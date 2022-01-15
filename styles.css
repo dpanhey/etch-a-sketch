@@ -13,8 +13,16 @@ body {
     height: 15vh;
     width: auto;
     background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rgb-divs {
     background-color: slateblue;
+}
+
+#btn {
+    height: 5rem;
+    border-radius: 10px;
 }

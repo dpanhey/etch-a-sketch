@@ -1,5 +1,8 @@
 "use strict"
 
+const button = document.querySelector("#btn");
+button.addEventListener("click", start);
+
 function createDivs(num) {
     let number = (num * num) +1;
     const container = document.querySelector("#main");
@@ -9,6 +12,16 @@ function createDivs(num) {
         container.appendChild(createDiv);
         container.setAttribute("style", `grid-template-columns: repeat(${num}, 1fr);`)
     }
+};
+
+function clearGrid() {
+    const container = document.querySelector("#main");
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
 }
 
-createDivs(4);
+function start() {
+    clearGrid();
+    createDivs(prompt("What grid size do you prefer?"));
+};
