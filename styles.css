@@ -5,21 +5,16 @@ body {
 #main {
     height: 80vh;
     width: auto;
-    background-color: lightslategrey;
     display: grid;
 }
 
 #second {
     height: 15vh;
     width: auto;
-    background-color: skyblue;
+    background-color: rgb(39, 39, 39);
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.rgb-divs {
-    background-color: slateblue;
 }
 
 #btn {

@@ -24,7 +24,12 @@ function clearGrid() {
 
 function start() {
     clearGrid();
-    createDivs(prompt("What grid size do you prefer?"));
+    let input = prompt("What grid size do you prefer?");
+    if (input > 100) {
+        alert("Please input a number below or equal to 100!")
+    } else {
+        createDivs(input);
+    }
 };
 
 function changeColor(e) {
